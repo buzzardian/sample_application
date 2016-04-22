@@ -17,3 +17,6 @@ hooks:
     chmod +x $TDDIUM_REPO_ROOT/bin/*
     chmod +x $TDDIUM_REPO_ROOT/scripts/*
     $TDDIUM_REPO_ROOT/scripts/build_and_upload_gem.sh
+
+system:
+  queue: "docker"
