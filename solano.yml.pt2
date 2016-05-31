@@ -17,7 +17,7 @@ hooks:
     # Start Webserver
     (cd www && python -m SimpleHTTPServer) &
     # Start SauceConnect
-    (cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --daemonize
+    (cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --daemonize)
 tests:
   - platform="Windows 8.1" browserName="chrome" version="43" JUNIT_DIR="junit_reports/windows_8_1_chrome_43" bundle exec rspec functional/spec/test1_spec.rb
   - platform="Windows 7" browserName="firefox" version="40" JUNIT_DIR="junit_reports/windows_7_firefox40" bundle exec rspec functional/spec/test1_spec.rb
