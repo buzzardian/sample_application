@@ -19,7 +19,7 @@ hooks:
     # Start SauceConnect
     (cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY) &
     # Give enough time for SauceConnect and Webserver to initialize
-    sleep 30
+    sleep 60
 
 tests:
   - platform="Windows 8.1" browserName="chrome" version="43" JUNIT_DIR="junit_reports/windows_8_1_chrome_43" bundle exec rspec functional/spec/test1_spec.rb
