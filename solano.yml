@@ -11,6 +11,10 @@ test_pattern:
   - spec/**_spec.rb
 test_exclude_pattern:
   - functional/**_spec.rb
+  - spec/cli/commands/status_spec.rb
+  - spec/cli/commands/rerun_spec.rb
+  - spec/scm/git_spec.rb
+  - spec/cli/commands/describe_spec.rb
 
 hooks:
   post_build: | 

@@ -22,5 +22,5 @@ sed -i.bak "s/_placeholder_/$location/g" www/solano.html
 sed -i.bak "s/_placeholder_/$location/g" www/index.html
 
 # Swap the solano.yml for the next step
-mv solano.yml solano.yml.pt1
-mv solano.yml.pt2 solano.yml
+#mv solano.yml solano.yml.pt1
+#mv solano.yml.saucelabs solano.yml
